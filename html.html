@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Замовлення</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <main>
+            <div class="first-form">
+                <p class="form-title">1. Яке блюдо будете замовляти?</p>
+                <form id="first-form" action="">
+                        <label for="pizza-checkbox">Піца 
+
+                            <input type="checkbox" name="pizza" id="pizza-checkbox">
+                        </label>
+                    
+                        <label for="hot-dog-checkbox">
+                            Хот-дог
+                            <input type="checkbox" name="hot-dog" id="hot-dog-checkbox">
+                        
+                        </label>
+                    
+                        <label for="hamburger-checkbox">
+                            Гамбургер
+                            <input type="checkbox" name="hamburger" id="hamburger-checkbox">
+                        
+                        </label>
+                            
+
+                        
+                        <label for="popcorn-checkbox">
+                            Попкорн
+                            <input type="checkbox" name="popcorn" id="popcorn-checkbox">
+                        
+                        </label>
+
+                    
+                        <label for="chypa-chyps-checkbox">
+                            Чупа-чупс
+                            <input type="checkbox" name="chypa-chyps" id="chypa-chyps-checkbox">
+                        
+                        </label>
+
+                    
+                    <!-- <div class="wrapper">
+                        <div class="wrapper">
+                            <label for="pizza-checkbox">Піца </label>
+                            <input type="checkbox" name="pizza" id="pizza-checkbox">
+                        </div>
+                        
+                       <div class="wrapper">
+                           <label for="hot-dog-checkbox">Хот-дог</label>
+                           <input type="checkbox" name="hot-dog" id="hot-dog-checkbox">
+                       </div> 
+                        
+                       <div class="wrapper">
+                           <label for="hamburger-checkbox">Гамбургер</label>
+                            <input type="checkbox" name="hamburger" id="hamburger-checkbox">
+
+                        </div> 
+                            
+                       <div class="wrapper">
+                           <label for="popcorn-checkbox">Попкорн</label>
+                            <input type="checkbox" name="popcorn" id="popcorn-checkbox">
+
+                       </div>
+                        
+                       <div class="wrapper">
+                           <label for="chypa-chyps-checkbox">Чупа-чупс</label>
+                            <input type="checkbox" name="chypa-chyps" id="chypa-chyps-checkbox">
+
+                       </div>
+                        
+                    </div> -->
+
+                </form>
+            </div>
+            <div class="second-form">
+                <p class="form-title">2. Куди доставляти замовлення</p>
+
+                <form id="second-form" action="">
+                    <!-- <div class="wrapper">
+                        <div class="wrapper">
+
+                            <label for="first-name">І'мя: </label>
+                            <input id="first-name" type="text">
+                        </div>
+                   
+              
+                        <div class="wrapper">
+                            <label for="last-name">Прізвище</label>
+                            <input id="last-name" type="text">
+                        </div>
+                        
+    
+                        <div class="wrapper">
+                            <label for="email">eMail</label>
+                            <div class="email-wrapper">
+
+                                <input id="email" type="text">
+                                <select name="email@"  id="email-selector">
+                                    <option >@gmail.com</option>
+                                    <option>@icloud.com</option>
+                                    <option>@yahoo.com</option>
+                                    <option>@outlook.com</option>
+                                    <option value="" disabled id="email-disabled" selected></option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <div class="wrapper">
+                            <label for="street-select">вулиця: </label>
+                            <select id="street-select" id="street">
+                               <option value="">Вулиця 1</option>
+                               <option value="">Вулиця 2</option>
+                               <option value="">Вулиця 3</option>
+                               <option value="">Вулиця 4</option>
+                               <option value="">Вулиця ....</option>
+                                <option id="street-disabled" value="" disabled selected>
+                                    
+                                </option>
+                            </select>
+                        </div>
+                       
+                        <div class="wrapper">
+                            <label for="city-select">місто: </label>
+                            <select id="city-select" type="text">
+                                <option value="123">Київ</option>
+                                <option value="">Одесса</option>
+                                <option value="">Харків</option>
+                                <option value="">Закарпаття</option>
+                                <option value="">Херсон</option>
+                                <option value="">Місто ....</option>
+                                <option id="city-disabled" value="" disabled selected> </option>
+                            </select>
+                        </div>
+                    </div> -->
+                            <label for="first-name">І'мя: 
+                                <input id="first-name" type="text">
+
+                            </label>
+                            <label for="last-name">Прізвище
+
+                                <input id="last-name" type="text">
+                            </label>
+                            <label class="email-label" for="email">eMail
+                                
+                                <div class="wrapper">
+                                    <input id="email" type="text">
+    
+                                    <select name="email@"  id="email-selector">
+                                        <option >@gmail.com</option>
+                                        <option>@icloud.com</option>
+                                        <option>@yahoo.com</option>
+                                        <option>@outlook.com</option>
+                                        <option value="" disabled id="email-disabled" selected></option>
+                                    </select>
+
+                                </div>
+                            </label>
+                            <label for="street-select">вулиця: 
+                                <select id="street-select" id="street">
+                                   <option value="">Вулиця 1</option>
+                                   <option value="">Вулиця 2</option>
+                                   <option value="">Вулиця 3</option>
+                                   <option value="">Вулиця 4</option>
+                                   <option value="">Вулиця ....</option>
+                                    <option id="street-disabled" value="" disabled selected>
+                                        
+                                    </option>
+                                </select>
+
+                            </label>
+                            <label for="city-select">місто:
+                                <select id="city-select" type="text">
+                                    <option value="123">Київ</option>
+                                    <option value="">Одесса</option>
+                                    <option value="">Харків</option>
+                                    <option value="">Закарпаття</option>
+                                    <option value="">Херсон</option>
+                                    <option value="">Місто ....</option>
+                                    <option id="city-disabled" value="" disabled selected> </option>
+                                </select>
+                                 </label>
+                </form>
+            </div>
+            <div class="third-form">
+                <p class="form-title">3. Як будете розраховуватися?</p>
+
+                <form id="third-form" action="">
+                    <!-- <div class="wrapper">
+                       
+                        <div class="payment-wrapper">
+                            <div class="wrapper">
+                                <input type="checkbox" name="gotivka" id="gotivka" >
+                                 <label for="gotivka">Готівкою</label>
+                            </div>
+                            <div class="wrapper">
+                                <input type="checkbox" name="check" id="check" >
+                                <label for="check">Чеком</label>
+                            </div>
+                            <div class="wrapper">
+                                <input type="checkbox" name="credit-card" id="credit-card" >
+                                <label for="credit-card">Кредитною карткою</label>
+                                <div id="card-wrapper">
+                                    <div class="wrapper">
+                                        <input type="checkbox" name="master-card" id="master-card">
+                                        <label for="master-card">MasterCard</label>
+                                    </div>
+                                    <div class="wrapper">
+                                        
+                                        <input type="checkbox" name="visa-card" id="visa-card">
+                                        <label for="master-card">Visa</label>
+                                    </div>
+                                    <div class="wrapper">
+                                        <input type="checkbox" name="discovery-card" id="discovery-card">
+                                         <label for="master-card">Discovery</label>
+                                    </div>
+                                    <div class="wrapper">
+                                        <input type="checkbox" name="american-express-card" id="american-express-card">
+                                    <label for="master-card">American Express</label>
+                                    
+                                    </div>
+                                   
+                                    
+        
+                                    
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div> -->
+                       
+                    <label for="gotivka">
+                        
+                        <input type="checkbox" name="gotivka" id="gotivka" >
+                                    Готівкою</label>
+                    <label for="check">
+                                        
+                        <input type="checkbox" name="check" id="check" >
+                        Чеком
+                    </label>
+                    <label for="credit-card">
+                        <input type="checkbox" name="credit-card" id="credit-card" >
+                        
+                        Кредитною карткою
+                        <div id="card-wrapper">
+                            <span>Кредитною карткою</span>
+                            <label for="master-card">
+                                <input type="checkbox" name="master-card" id="master-card">
+                                MasterCard
+                            </label>
+                                
+                        
+                            <label for="master-card">
+                                <input type="checkbox" name="visa-card" id="visa-card">
+                                
+                                Visa
+                            </label>
+                            <label for="master-card">
+                                <input type="checkbox" name="discovery-card" id="discovery-card">
+                                Discovery
+                            
+                            </label>
+                            <label for="master-card">
+                                <input type="checkbox" name="american-express-card" id="american-express-card">
+                                
+                                American Express
+                            </label>
+                            
+                        </div>
+                    </label>
+
+                </form>
+            </div>
+            <div class="buttons-wrapper">
+                <button onclick="submitForm()" id="submit-button">Відправити</button>
+                <button onclick="clearBtn()" id="clear-button">Очистити</button>
+            </div>
+        </main>
+        
+        <script src="./script.js" async defer></script>
+    </body>
+</html>

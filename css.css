@@ -1,0 +1,170 @@
+body{
+    max-width: 40dvw;
+    margin: auto;
+    display: grid;
+}
+main{
+    grid-template-columns: 100%;
+    /* margin-inline: 10dvw; */
+    
+    /* align-items: flex-start; */
+    /* gap: 1rem; */
+   
+
+}
+main .first-form, .second-form, .third-form {
+    margin-top: 1.5rem !important;
+}
+/* @media (min-width: 801px) {
+    main{
+     margin-inline:10rem !important
+    };
+ }
+@media (min-width: 501px) {
+   main{
+    margin-inline: 10rem !important
+   };
+}
+@media (max-width: 500px) {
+   main{
+    margin-inline: 10dvw
+   };
+} */
+body {
+    /* height: 100dvh; */
+    /* margin: auto; */
+    /* display: grid; */
+    /* place-content: center; */
+    
+    /* max-width: 800px !important; */
+}
+
+main .first-form {
+
+    display: grid;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+}
+main .first-form form {
+    display: flex !important;
+    flex-direction: column;
+}
+main .first-form form label {
+    display: grid;
+    grid-template-columns: 33% auto;
+}
+.first-form label, .first-form p {
+    color: blue
+}
+.first-form form label input {
+    box-shadow: inset 0 2px 5px rgba(128, 128, 128, 0.448);
+    width: 1rem;
+    height: 1rem;
+
+}
+.second-form form {
+    display: grid;
+}
+
+.second-form form label {
+    display: grid;
+    
+    gap:1rem;
+    grid-template-columns: 20% 50%;
+}
+.second-form form .email-label .wrapper{
+    display:flex ;
+    /* gap: 0; */
+}
+
+
+@media screen and (max-width:650px ) {
+    .second-form form .email-label .wrapper{
+        display:grid ;
+        /* gap: 0; */
+    }
+    .second-form form .email-label .wrapper input{
+        /* max: 22.7dvw; */
+        min-width: 5rem !important;
+    }
+
+}
+.second-form form .email-label .wrapper input{
+    /* gap: 0; */
+}
+
+.second-form form .email-label .wrapper select{
+    /* gap: 0; */
+}
+
+
+.second-form form .email-label input {
+    /* margin-left: 3.4rem; */
+}
+
+.third-form form {
+    display: grid;
+    /* border: 1px solid gray; */
+    
+}
+.third-form form label {
+    border: gray 1px solid
+}
+.third-form form #card-wrapper label {
+    border:none;
+    margin-left: 2rem;
+
+}
+.third-form form input{
+    width: 1em;
+    height: 1em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid gray;
+    appearance: none;
+    -webkit-appearance: none;
+    /* outline: none; */
+    cursor: pointer;
+    box-shadow: inset 0 2px 5px rgba(128, 128, 128, 0.448);
+}
+
+.third-form form input:checked {
+    background-color: aqua;
+}
+.third-form form #card-wrapper {
+    display: grid;
+    border: 1px solid gray;
+}
+.third-form form label #card-wrapper {
+    display: none;
+}
+.second-form label, .second-form p {
+    color: green
+}
+.third-form label, .third-form p {
+    color: rgb(255, 115, 0)
+}
+.third-form form #card-wrapper span  {
+    color: rgb(255, 115, 0);
+}
+.first-form p, .second-form p ,.third-form p {
+    font-weight: bold;
+    text-align: center;
+}
+.first-form, .second-form, .third-form  p.form-title {
+    margin: auto;
+}
+
+.buttons-wrapper {
+    display: flex;
+    gap: 5rem;
+    margin-block: 2%;
+    justify-content: center;
+
+}
+
+
+.grid{
+    display: grid !important;
+}
