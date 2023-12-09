@@ -2,6 +2,13 @@ body{
     max-width: 40dvw;
     margin: auto;
     display: grid;
+
+}
+@media screen and (max-width: 400px) {
+    body {
+        max-width: 90%;
+    }
+    
 }
 main{
     grid-template-columns: 100%;
@@ -156,6 +163,9 @@ main .first-form form label {
     margin: auto;
 }
 
+main{
+    display: grid !important;
+}
 .buttons-wrapper {
     display: flex;
     gap: 5rem;
