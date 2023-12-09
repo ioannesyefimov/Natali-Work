@@ -270,24 +270,40 @@ function submitForm(){
     console.log(notAddedOrderInformation)
             
     let paymentChecked = []
-    let cardSelected = []
+    let cardSelected = false
+    let cardsSelected = []
+    
+    for(let paymentInfo of paymentInformation){
 
-    paymentInformation.forEach(paymentInfo=>{
         console.log(`payment info:`,paymentInfo)
+        if(paymentInfo.checked && paymentInfo.id === 'credit-card'){
+            console.log('payment card is selected:',cardsInformation)
+            cardSelected = true
+        } else 
         if(paymentInfo.checked){
+            console.log(`payment checked`,paymentInfo);
             paymentChecked.push(paymentInfo.id)
         }
-        if(paymentInfo.checked && paymentInfo.id === 'credit-card'){
-            cardsInformation.forEach(card=>{
-                if(card?.checked){
-                    cardSelected.push(card)
-                } 
-            })
-        }
-    })
-    if(cardSelected.length === 0 ){
-        return alert('не заповнена анкета до кінця')
     }
+    if(cardSelected){
+        console.log('cardsInformation:',cardsInformation)
+        for (let card of cardsInformation){
+            console.log('card:',card)
+            if(card?.checked){
+                cardsSelected.push(card)
+                paymentChecked.push({card:card.id})
+                console.log(`cards selected:`,cardsSelected)
+            } 
+        }
+       
+    }
+   
+    if(cardSelected && cardsSelected.length === 0){
+            // return alert('не заповнена анкета до кінця')
+
+    }
+    // if(cardSelected){
+    // }
     if(paymentChecked.length === 0 ){
         return alert('не заповнена анкета до кінця')
 
